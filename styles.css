@@ -26,6 +26,11 @@ body {
     padding: 30px;
 }
 
+.thank-you-card {
+    align-items: center;
+    justify-content: space-evenly;
+}
+
 .star {
     height: 50px;
     width: 50px;
@@ -38,8 +43,30 @@ body {
     align-items: center;
 }
 
+.rating-bubble {
+    background-color: hsla(216, 12%, 54%, 0.144);
+    color: hsl(25, 97%, 53%);
+    font-size: 15px;
+    border-radius: 99px;
+    padding: 7px 15px;
+    margin: 12px;
+    width: 200px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rating {
+    
+}
+
 .text {
     text-align: left;
+}
+
+.thank-you-text {
+    text-align: center;
 }
 
 .heading {
@@ -97,4 +124,10 @@ body {
 .submit-btn:active {
     background-color: hsl(0, 0%, 100%);
     color: hsl(25, 97%, 53%);
+}
+
+@media (max-width: 600px){
+    .card {
+        width: 340px;
+    }
 }
