@@ -1,6 +1,9 @@
 const ratingBtn = document.querySelectorAll(".rating-btn");
 const submitBtn = document.querySelector(".submit-btn")
-// const rating = document.querySelector(".rating");
+const rating = document.querySelector(".rating");
+const card = document.querySelector("#card");
+const thankYouCard = document.querySelector(".thank-you-card")
+
 let selected = 0;
 
 function removeHighlight () {
@@ -16,13 +19,12 @@ ratingBtn.forEach(elementBtn => {
         selected = elementBtn.innerHTML;
 
         console.log(selected);
-        // console.log(rating.innerHTML);
     })
 })
 
-// submitBtn.addEventListener("click", () => {
-//     rating.innerHTML = selected;
-    
-// })
+submitBtn.addEventListener("click", () => {
+    rating.innerHTML = selected;
+    card.style.display = "none";
+    thankYouCard.style.display = "flex";
+})
 
-// how to display correct rating on thank you page
